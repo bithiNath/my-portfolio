@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Bithi Nath</title>
+  <meta name="description" content="Notes from Bithi Nath on the shift from finance to data analytics — SQL, Power BI, Tableau, and career reflections.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-brand">Bithi Nath <span>BN</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="passions.html">Passions</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow eyebrow--light">Field Notes</span>
+      <h1>Blog</h1>
+      <p>Notes from the move between finance and data — what I'm learning, building, and rethinking along the way.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <p class="blog-intro">A short, occasional log. No fluff — just what I actually picked up from a project, a query, or a week of work.</p>
+
+        <div class="blog-list">
+
+          <article class="blog-post reveal">
+            <div class="blog-meta">
+              <span class="blog-tag">Career</span>
+              <span class="blog-date">June 2026</span>
+              <span class="blog-dot"></span>
+              <span class="blog-date">4 min read</span>
+            </div>
+            <h2>From Ledgers to Dashboards: Six Months Into the Shift</h2>
+            <div class="blog-post-body">
+              <p>The biggest surprise wasn't the tools — Python and SQL took weeks to feel natural, not months. It was realizing how much of audit actually <strong>is</strong> data analytics. Reconciling a bank statement against SAP and reconciling a messy CSV against a source-of-truth table are the same instinct wearing different clothes: find where the numbers disagree, and figure out why.</p>
+              <p>What's been harder is the part nobody warns you about — sitting with a half-finished dashboard and not knowing if the chart you picked actually answers the question someone asked. In audit, the question is usually fixed. In analytics, half the job is figuring out what the real question even is before touching the data.</p>
+              <p>If I could tell my past self one thing: clean data discipline carries over completely. Confidence in deciding <em>what to build</em> doesn't — that only comes from building a lot of dashboards, including the wrong ones.</p>
+            </div>
+          </article>
+
+          <article class="blog-post reveal">
+            <div class="blog-meta">
+              <span class="blog-tag">SQL</span>
+              <span class="blog-date">May 2026</span>
+              <span class="blog-dot"></span>
+              <span class="blog-date">5 min read</span>
+            </div>
+            <h2>Five SQL Patterns I Reach for Every Week</h2>
+            <div class="blog-post-body">
+              <p>Coming from Excel, SQL felt like learning to talk to a very literal, very fast colleague. A handful of patterns cover most of what I actually need on real business questions:</p>
+              <p><strong>Aggregation with <code>GROUP BY</code></strong> — almost every HR or sales question starts here: totals, averages, counts, by department or region.</p>
+              <p><strong><code>JOIN</code>s across relational tables</strong> — once data lives in proper tables instead of one giant spreadsheet, joins are how you put the story back together.</p>
+              <p><strong><code>CASE WHEN</code> for categorization</strong> — turning raw numbers into bands (e.g. attendance ranges, performance tiers) is something I used constantly building the WorkforceIQ queries.</p>
+              <p><strong>Window functions for running comparisons</strong> — month-over-month or rank-within-group questions, which a single <code>GROUP BY</code> can't answer alone.</p>
+              <p><strong>Date filtering</strong> — sounds basic, but getting fiscal-year and reporting-period logic right is exactly the kind of precision audit trained into me.</p>
+            </div>
+          </article>
+
+          <article class="blog-post reveal">
+            <div class="blog-meta">
+              <span class="blog-tag">BI Tools</span>
+              <span class="blog-date">April 2026</span>
+              <span class="blog-dot"></span>
+              <span class="blog-date">6 min read</span>
+            </div>
+            <h2>Power BI vs. Tableau: What Building the Same Workflow Twice Taught Me</h2>
+            <div class="blog-post-body">
+              <p>I built E-Grocery Insights BD in Tableau and RetailNexus in Power BI — not because I planned a comparison, but because each project called for what was on hand at the time. In hindsight, it turned into a useful side-by-side.</p>
+              <p>Tableau felt more forgiving for exploratory work — dragging fields around to see what a chart wants to be before committing to a layout. Power BI felt stronger once the structure was already clear, especially with DAX measures sitting close to the data model instead of off to the side.</p>
+              <p>Neither tool replaced the actual hard part, which is upstream: if the underlying table is wrong, no amount of tool preference fixes the dashboard. That part stayed identical in both projects.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">Bithi Nath</div>
+            <p class="footer-tagline">
+              Aspiring Data Analyst, ex-Finance Professional. Based in Dhaka,
+              Bangladesh.
+            </p>
+          </div>
+          <div>
+            <div class="footer-col-label">Contact</div>
+            <div class="footer-links">
+              <a href="mailto:bithi.nath06@gmail.com">bithi.nath06@gmail.com</a>
+              <span data-site="location"></span>
+            </div>
+          </div>
+          <div>
+            <div class="footer-col-label">Elsewhere</div>
+            <div class="footer-links">
+              <a href="https://github.com/bithiNath" target="_blank"  rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-site="year"></span> Bithi Nath</span>
+          <span>Built with HTML, CSS &amp; JS — hosted on GitHub Pages</span>
+        </div>
+      </div>
+    </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
