@@ -1180,9 +1180,9 @@ h4 {
   font-weight: 600;
 }
 
-.deshboard_link {
+.deshboard_link a {
   color: #0390b7;
-  font-size: 11px;
+  font-size: 16px;
   margin-top: 20px;
   font-weight: 800;
 }
