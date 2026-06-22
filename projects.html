@@ -54,16 +54,40 @@
                 <span class="stack-pill">GitHub</span>
               </div>
               <p class="project-desc">
-                A market-intelligence project tracking live pricing across online grocery platforms in Bangladesh — built to surface offer trends and brand dominance the way an analyst would track a competitive market.
+                Online grocery pricing in Bangladesh moves constantly — platforms run rotating offers, and brand presence shifts week to week. This project treats that as a market-intelligence problem: scrape live pricing data, structure it, and surface the patterns a category manager would actually want to see.
               </p>
+              <h3>Tools & purpose</h3>
               <ul class="project-points">
-                <li>Scraped live product and pricing data from online grocery platforms using <strong>Selenium</strong>.</li>
+                <li>Scraped <strong>8,085+</strong> live product and pricing data from online grocery platforms (Chaldal & Shwapno) using <strong>Selenium</strong>.</li>
                 <li>Cleaned and transformed data with <strong>pandas / numpy</strong> in Jupyter Notebook.</li>
                 <li>Built an interactive <strong>Tableau</strong> dashboard visualizing pricing trends, offer &amp; savings distribution, brand dominance, and market insights.</li>
                 <li>Published the full project on <strong>GitHub</strong>.</li>
               </ul>
+
+              <h3>Challenges in Data Processing</h3>
+              <ul class="project-points">
+                <li>Removed <strong>~890 duplicate</strong> and null entries during data cleaning.</li>
+                <li><strong>~350 multi-category products</strong> were standardized by keeping the most relevant category.</li>
+                <li>Price and unit variations exist for the same product across platforms due to packaging differences.</li>
+                <li>Brand extraction (<strong>~700 brands</strong>) required keyword-based parsing with manual correction.</li>
+                <li><strong>~4,000 products</strong> with generic units were processed using derived fields (actual unit, savings, price metrics, etc.)</li>
+                <li>Out-of-stock status from Chaldal could not be fully captured, which may slightly affect analysis.</li>
+              </ul>
+
+              <h3>What the dashboard shows</h3>
+              <ul class="project-points">
+                <li>Pricing trends across products and platforms over time.</li>
+                <li>Offer and savings distribution — where discounts are concentrated.</li>
+                <li>Brand dominance — which brands show up most often, and at what price tier.</li>
+                <li>Overall market insights useful for spotting pricing patterns at a glance.</li>
+              </ul>
+        
+             <div class="deshboard_link">
+                <a href="https://public.tableau.com/app/profile/bithi.nath/viz/visualization_1_17772762990980/Dashboard" target="_blank" class="btn">Click to View Interactive Dashboard</a><span>|</span><a href="https://public.tableau.com/app/profile/bithi.nath/viz/visualization_1_17772762990980/Detailedcharts?publish=yes" target="_blank" class="btn">Click to View Detailed Charts</a>
+               </div>
+
             <div class="project_dashboard">
-              <img src="assets/dashboards/E-grocery/dashboard.png" alt="">
+                <img src="assets/dashboards/E-grocery/dashboard.png" alt="">
             </div>
             </div>
           </article>
@@ -81,16 +105,74 @@
                 <span class="stack-pill">Power BI</span>
               </div>
               <p class="project-desc">
-                Started with raw HR data and built a complete analytics workflow from database to dashboard.
+                An end-to-end HR analytics project that tracks employee attrition, compensation, performance, diversity, and attendance using SQL for analysis and Power BI for visualization.
               </p>
+              <h3>Tools & purpose</h3>
               <ul class="project-points">
                 <li><strong>PostgreSQL</strong> — structured data storage with 5 relational tables.</li>
                 <li><strong>SQL</strong> — 12 business-question-driven queries covering attrition, compensation, performance, diversity, and attendance.</li>
                 <li><strong>Power BI</strong> — interactive HR dashboard built on top of the query layer.</li>
               </ul>
+
+              <h3 class=>What's inside</h3>
+              <div class="case-table-wrap">
+                <table class="case-table">
+    
+                 <thead>
+                  <tr>
+                    <th>Dataset Table</th>
+                    <th>No. of Rows</th>
+                    <th>Description</th>
+                  </tr>
+                 </thead>
+
+                  <tbody>
+                    <tr>
+                      <td class="mono-cell">employees</td>
+                      <td class="num-cell">1,000</td>
+                      <td>Core employee master data (demographics, hire/exit dates, job title, status)</td>
+                    </tr>
+
+                    <tr>
+                      <td class="mono-cell">departments</td>
+                      <td class="num-cell">7</td>
+                      <td>Department reference table</td>
+                    </tr>
+
+                    <tr>
+                      <td class="mono-cell">salaries</td>
+                      <td class="num-cell">1,000</td>
+                      <td>Base salary and bonus per employee</td>
+                    </tr>
+
+                    <tr>
+                      <td class="mono-cell">performance</td>
+                      <td class="num-cell">2,000</td>
+                      <td>Annual performance ratings (2022–2023, scale 1–5)</td>
+                    </tr>
+
+                    <tr>
+                      <td class="mono-cell">attendance</td>
+                      <td class="num-cell">90,000</td>
+                      <td>Daily attendance records (Jan–Mar 2024)</td>
+                    </tr>
+                  </tbody>
+                </table>
+             </div>
+
+              <h3>What the dashboard shows</h3>
+              <ul class="project-points">
+                <li>Workforce size, active headcount & growth trend analysis.</li>
+                <li>Employee attrition rate and retention pattern analysis.</li>
+                <li>Department-wise attendance and attrition performance.</li>
+                <li>Performance rating distribution and improvement trends.</li>
+                <li>Salary analysis by department, gender & performance level.</li>
+                <li>Employee tenure and retention behavior analysis.</li>
+                <li>Gender diversity insights across departments.</li>
+                <li>Top-paid active employee identification & workforce insights.</li>
+              </ul>
               <div class="project_dashboard">
               <img src="assets/dashboards/workforceiq/workforceiq.png" alt="">
-            </div>
             </div>
           </article>
 
@@ -109,14 +191,75 @@
                 <span class="stack-pill">GitHub</span>
               </div>
               <p class="project-desc">
-                An end-to-end business intelligence pipeline built on a retail sales dataset — simulating how a real BI team moves data from raw files to a decision-ready dashboard.
+                RetailNexus is an end-to-end data analytics project built on a retail sales dataset. It simulates a real-world business intelligence pipeline — starting from raw data cleaning in Python, structured storage in PostgreSQL, and finally an interactive multi-page dashboard in Power BI.
+
+                The goal is to give business stakeholders a single unified hub to monitor sales performance, customer behavior, product trends, and financial health — all in one place, with interactive filters.
               </p>
+               <h3>Tools & purpose</h3>
               <ul class="project-points">
                 <li>Cleaned and structured raw retail sales data with <strong>pandas</strong>.</li>
                 <li>Designed structured storage in <strong>PostgreSQL</strong> to mirror a production data pipeline.</li>
                 <li>Built an interactive, multi-page dashboard in <strong>Power BI</strong> for sales performance analysis.</li>
               </ul>
-               <div class="project_dashboard">
+
+              <h3 class=>What's inside</h3>
+              <div class="case-table-wrap">
+                <table class="case-table">
+                  
+                  <thead>
+                    <tr>
+                      <th>Property</th>
+                      <th>Value</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td class="mono-cell">Source</td>
+                      <td>Synthetic / dummy dataset</td>
+                    </tr>
+
+                    <tr>
+                      <td class="mono-cell">Total rows</td>
+                      <td>1,963 transactions</td>
+                    </tr>
+
+                    <tr>
+                      <td class="mono-cell">Total columns</td>
+                      <td>25</td>
+                    </tr>
+
+                    <tr>
+                      <td class="mono-cell">Date range</td>
+                      <td>2023 – 2024</td>
+                    </tr>
+
+                    <tr>
+                      <td class="mono-cell">Geography</td>
+                      <td>Bangladesh (Dhaka, Chittagong, Sylhet, Khulna, Rajshahi, etc.)</td>
+                    </tr>
+
+                    <tr>
+                      <td class="mono-cell">Categories</td>
+                      <td>Electronics, Clothing, Food & Grocery, Home & Garden, Sports, Beauty</td>
+                    </tr>
+                  </tbody>
+
+                </table>
+              </div>
+
+              <h3>Business questions answered</h3>
+              <ul class="project-points">
+                <li>Which cities and store branches generate the most revenue?</li>
+                <li>Which customer segments (age group, gender, membership tier) are most valuable?</li>
+                <li>What are the top-selling and most-returned products?</li>
+                <li>How do sales channels (In-Store, Online, Mobile App) compare?</li>
+                <li>Does offering a discount actually improve profit margin?</li>
+                <li>Which months and days of the week see the highest sales?</li>
+                <li>How is revenue trending over time vs. profit?</li>
+              </ul>
+              
+              <div class="project_dashboard">
               <img src="assets/dashboards/retailnexus/Scr_dashboard.png" alt="">
               <img src="assets/dashboards/retailnexus/Scr_financial.png" alt="">
               <img src="assets/dashboards/retailnexus/Scr_products.png" alt="">
@@ -144,25 +287,33 @@
 
                   <ul class="project-points">
 
-                  <li> <strong>Travel Website Design</strong> —  Responsive landing page with hero sections, destination grids, and modern layout design using HTML5 & CSS3. </li>
+                  <li> <strong>Travel Website Design</strong> : 
+                    <br>
+                     Responsive landing page with hero sections, destination grids, and modern layout design using HTML5 & CSS3. </li>
                   <div class="project_web">
                   <video controls>
                     <source src="assets/web_videos/traveling_site_1.mp4" type="video/mp4">
                   </video>
                   </div>
-                  <li><strong>E-Commerce Website</strong> —  Online shopping interface featuring product cards, navigation structure, CSS Grid layouts, and responsive design.</li>
+                  <li><strong>E-Commerce Website</strong> :
+                      <br>
+                      Online shopping interface featuring product cards, navigation structure, CSS Grid layouts, and responsive design.</li>
                   <div class="project_web">
                   <video controls>
                     <source src="assets/web_videos/ecommerce_site_1.mp4" type="video/mp4">
                   </video>
                   </div>
-                 <li><strong>Admin Dashboard</strong> — Analytics dashboard UI focused on grid positioning, data cards, tables, and dashboard-style components.</li>
+                 <li><strong>Admin Dashboard</strong> :
+                  <br>
+                   Analytics dashboard UI focused on grid positioning, data cards, tables, and dashboard-style components.</li>
                  <div class="project_web">
                   <video controls>
                     <source src="assets/web_videos/admin_dashboard_1.mp4" type="video/mp4">
                   </video>
                   </div>
-                 <li><strong>YouTube Interface Clone</strong> — Pixel-inspired frontend recreation with semantic HTML, sidebar structure, and responsive UI elements. </li>
+                 <li><strong>YouTube Interface Clone</strong> :
+                  <br>
+                   Pixel-inspired frontend recreation with semantic HTML, sidebar structure, and responsive UI elements. </li>
                   <div class="project_web">
                   <video controls>
                     <source src="assets/web_videos/youtube_1.mp4" type="video/mp4">

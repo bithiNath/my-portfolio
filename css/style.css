@@ -1,8 +1,6 @@
 /* ==========================================================================
    BITHI NATH — PORTFOLIO STYLESHEET
-   Design concept: "Ledger to Dashboard" — the visual language bridges
-   finance (ledger rules, tabular figures, paper tones) with data
-   analytics (chart bars, teal/amber signal colors, dashboard grids).
+   Design concept: 
    ========================================================================== */
 
 /* ---- Fonts ---- */
@@ -777,11 +775,20 @@ h1, h2, h3, h4 {
 .cert-date { font-family: var(--font-mono); font-size: 12.5px; color: var(--teal); white-space: nowrap; }
 
 .cert-grid-others {
-   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 32px;
   margin-bottom: 40px;
+}
+
+.cert-grid-others .cert-card {
+  border: 1px solid rgb(62, 62, 62);
+}
+
+.cert-grid-others .cert-card-meta{
+  padding-bottom: 40px;
+  padding-top: 20px;
 }
 
 .placeholder-icon {
@@ -803,7 +810,6 @@ h1, h2, h3, h4 {
 
 .cert-card {
   background: var(--white);
-  border: 1px solid var(--rule);
   border-radius: var(--radius-md);
   overflow: hidden;
   transition: transform var(--transition), box-shadow var(--transition);
@@ -907,7 +913,7 @@ h1, h2, h3, h4 {
   color: var(--slate);
   font-size: 15px;
   line-height: 1.7;
-  max-width: 70ch;
+  max-width: 110ch;
 }
 
 .project-points {
@@ -931,11 +937,61 @@ h1, h2, h3, h4 {
   height: 1.5px;
   background: var(--teal);
 }
+.project-body h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
 
+.case-table-wrap {
+  overflow-x: auto;
+  margin-top: 15px;
+}
+
+.case-table {
+  width: 70%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background: #fff;
+}
+
+.case-table th {
+  text-align: left;
+  padding: 12px;
+  background: #f5f5f5;
+  border-bottom: 2px solid #ddd;
+  font-weight: 600;
+}
+
+.case-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+
+.case-table tr:hover {
+  background: #fafafa;
+}
+
+.mono-cell {
+  font-family: monospace;
+  font-weight: 600;
+}
+
+.num-cell {
+  text-align: right;
+  font-weight: 600;
+}
+
+.deshboard_link{
+  color: #0390b7;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
 .project_dashboard {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     margin-top: 40px;
 }
@@ -948,21 +1004,30 @@ h1, h2, h3, h4 {
 }
 
 .project_dashboard:has(img:only-child) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 3fr .2fr; 
 }
 
 .project_web {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  flex-wrap: wrap; 
 }
 
 .project_web video {
-    width: 650px;   
-    height: 400px;
-    display: block;
+  width: 80%; 
+  max-width: 1000px;
+  max-height: 600px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
 }
+
+
 
 
 /* =================================================
