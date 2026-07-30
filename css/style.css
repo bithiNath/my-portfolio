@@ -810,61 +810,92 @@ h4 {
 }
 
 /* ---- Skill proficiency ledger ---- */
-.proficiency-list {
-  margin-top: 32px;
-  display: grid;
-  gap: 18px;
+
+
+
+/* ==========================
+   Technical Skills
+========================== */
+
+.skills-wrapper{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
 
-.proficiency-row {
-  display: grid;
-  grid-template-columns: 160px 1fr 90px;
-  align-items: center;
-  gap: 16px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--rule);
-}
-.proficiency-row:last-child {
-  border-bottom: none;
+.skill-group{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e6e1da;
 }
 
-.proficiency-name {
-  font-size: 14.5px;
-  font-weight: 600;
-  color: var(--navy);
+.skill-group:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
-.proficiency-track {
-  height: 6px;
-  background: var(--paper-dim);
-  border-radius: 4px;
-  overflow: hidden;
+.skill-group h3{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1.9rem;
+    letter-spacing: .5px;
 }
 
-.proficiency-fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--teal), var(--amber));
-  border-radius: 4px;
-  width: 0;
-  transition: width 900ms cubic-bezier(0.2, 0.8, 0.2, 1);
+.skill-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .95rem;
 }
 
-.proficiency-level {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--slate);
-  text-align: right;
+.skill-tags span{
+    display: inline-flex;
+    align-items: center;
+    padding: .40rem 1.9rem;
+    background: #fff;
+    border: 1px solid #ddd7ce;
+    border-radius: 999px;
+    font-size: .90rem;
+    font-weight: 500;
+    color: #444;
+    transition: all .3s ease;
+    cursor: default;
 }
 
-@media (max-width: 600px) {
-  .proficiency-row {
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
-  .proficiency-level {
-    text-align: left;
-  }
+.skill-tags span:hover{
+    background: #4d7c75;
+    border-color: #4d7c75;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(77,124,117,.18);
 }
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width:768px){
+
+    .skills-wrapper{
+        gap:2rem;
+    }
+
+    .skill-group h3{
+        font-size:1.1rem;
+    }
+
+    .skill-tags{
+        gap:.7rem;
+    }
+
+    .skill-tags span{
+        font-size:.88rem;
+        padding:.55rem .95rem;
+    }
+
+}
+
+
 
 /* ---- Education ---- */
 .edu-grid {
@@ -1187,7 +1218,7 @@ h4 {
   font-weight: 800;
 }
 .project_dashboard {
-  width: 100%;
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;

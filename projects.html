@@ -268,100 +268,214 @@
             </div>
             </div>
           </article>
-<!-- EXTRA
+
+          <!--PROJECT 4--->
+          
           <article class="project-card reveal">
-            <div class="project-spine"></div>
-            <div class="project-body">
-              <div class="project-top">
-                <h2 class="project-title">RetailNexus</h2>
-                <a href="https://github.com/bithiNath/RetailNexus" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
-              </div>
-              <div class="project-stack">
-                <span class="stack-pill">Pandas</span>
-                <span class="stack-pill">SQL</span>
-                <span class="stack-pill">PostgreSQL</span>
-                <span class="stack-pill">Power BI</span>
-                <span class="stack-pill">GitHub</span>
-              </div>
-              <p class="project-desc">
-                RetailNexus is an end-to-end data analytics project built on a retail sales dataset. It simulates a real-world business intelligence pipeline — starting from raw data cleaning in Python, structured storage in PostgreSQL, and finally an interactive multi-page dashboard in Power BI.
-
-                The goal is to give business stakeholders a single unified hub to monitor sales performance, customer behavior, product trends, and financial health — all in one place, with interactive filters.
-              </p>
-               <h3>Tools & purpose</h3>
-              <ul class="project-points">
-                <li>Cleaned and structured raw retail sales data with <strong>pandas</strong>.</li>
-                <li>Designed structured storage in <strong>PostgreSQL</strong> to mirror a production data pipeline.</li>
-                <li>Built an interactive, multi-page dashboard in <strong>Power BI</strong> for sales performance analysis.</li>
-              </ul>
-
-              <h3 class=>What's inside</h3>
-              <div class="case-table-wrap">
-                <table class="case-table">
-                  
-                  <thead>
-                    <tr>
-                      <th>Property</th>
-                      <th>Value</th>
-                    </tr>
-                  </thead>
-
-                  <tbody>
-                    <tr>
-                      <td class="mono-cell">Source</td>
-                      <td>Synthetic / dummy dataset</td>
-                    </tr>
-
-                    <tr>
-                      <td class="mono-cell">Total rows</td>
-                      <td>1,963 transactions</td>
-                    </tr>
-
-                    <tr>
-                      <td class="mono-cell">Total columns</td>
-                      <td>25</td>
-                    </tr>
-
-                    <tr>
-                      <td class="mono-cell">Date range</td>
-                      <td>2023 – 2024</td>
-                    </tr>
-
-                    <tr>
-                      <td class="mono-cell">Geography</td>
-                      <td>Bangladesh (Dhaka, Chittagong, Sylhet, Khulna, Rajshahi, etc.)</td>
-                    </tr>
-
-                    <tr>
-                      <td class="mono-cell">Categories</td>
-                      <td>Electronics, Clothing, Food & Grocery, Home & Garden, Sports, Beauty</td>
-                    </tr>
-                  </tbody>
-
-                </table>
-              </div>
-
-              <h3>Business questions answered</h3>
-              <ul class="project-points">
-                <li>Which cities and store branches generate the most revenue?</li>
-                <li>Which customer segments (age group, gender, membership tier) are most valuable?</li>
-                <li>What are the top-selling and most-returned products?</li>
-                <li>How do sales channels (In-Store, Online, Mobile App) compare?</li>
-                <li>Does offering a discount actually improve profit margin?</li>
-                <li>Which months and days of the week see the highest sales?</li>
-                <li>How is revenue trending over time vs. profit?</li>
-              </ul>
-              
-              <div class="project_dashboard">
-              <img src="assets/dashboards/retailnexus/Scr_dashboard.png" alt="">
-              <img src="assets/dashboards/retailnexus/Scr_financial.png" alt="">
-              <img src="assets/dashboards/retailnexus/Scr_products.png" alt="">
-              <img src="assets/dashboards/retailnexus/Scr_customers.png" alt="">
-              <img src="assets/dashboards/retailnexus/Scr_sales.png" alt="">
+          <div class="project-spine"></div>
+          <div class="project-body">
+            <div class="project-top">
+              <h2 class="project-title">FinSight Banking Analytics</h2>
+              <a href="https://github.com/bithiNath/FinSight_Banking" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
             </div>
+            <div class="project-stack">
+              <span class="stack-pill">PostgreSQL</span>
+              <span class="stack-pill">Python</span>
+              <span class="stack-pill">Power BI</span>
+              <span class="stack-pill">DAX</span>
+              <span class="stack-pill">GitHub Copilot</span>
+              <span class="stack-pill">Claude AI</span>
             </div>
-          </article>
--->
+            <p class="project-desc">
+              FinSight Banking Analytics is a full-stack data analytics project built on a simulated banking dataset of 2,150 customers. It covers the complete analytics pipeline — from raw data preprocessing to SQL-based analysis and an interactive Power BI dashboard — with AI tools integrated at each stage to accelerate development and improve accuracy.
+
+              The project was built around a practical, real-world workflow where AI assistants are used as professional productivity tools, not replacements for analytical thinking — each one selected based on its fit for the specific environment and task.
+            </p>
+
+            <h3>Tools & purpose</h3>
+            <ul class="project-points">
+              <li>Cleaned and preprocessed raw customer data with <strong>Python (Pandas)</strong>, assisted by GitHub Copilot for transformation logic and null handling.</li>
+              <li>Built 13 analytical <strong>SQL</strong> queries in <strong>PostgreSQL</strong> covering segmentation, loans, balances, and regional trends.</li>
+              <li>Re-implemented all 13 queries as <strong>DAX</strong> measures in Power BI Desktop, using Claude AI to resolve table conflicts, case-sensitivity issues, and SQL-to-DAX syntax differences.</li>
+              <li>Designed an interactive <strong>Power BI</strong> dashboard with Power Query (M) transformations on top of the DAX layer.</li>
+            </ul>
+
+            <h3>AI-assisted workflow</h3>
+            <ul class="project-points">
+              <li><strong>Stage 1 (Pandas):</strong> GitHub Copilot in VS Code accelerated data cleaning and preprocessing while data-quality checks stayed manual.</li>
+              <li><strong>Stage 2 (SQL):</strong> Copilot suggested query structure, aggregations, and CASE/GROUP BY logic; every query was reviewed before use.</li>
+              <li><strong>Stage 3 (DAX):</strong> Since Copilot isn't available in Power BI Desktop, Claude AI was used to convert and debug DAX measures — chosen specifically for the environment.</li>
+              <li>Each AI tool was selected for task fit, with analytical decisions and final review handled independently.</li>
+            </ul>
+
+            <h3 class=>What's inside</h3>
+            <div class="case-table-wrap">
+              <table class="case-table">
+
+                <thead>
+                  <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="mono-cell">Source</td>
+                    <td>Dummy dataset</td>
+                  </tr>
+
+                  <tr>
+                    <td class="mono-cell">Total rows</td>
+                    <td>2,150 customers</td>
+                  </tr>
+                  <tr>
+                    <td class="mono-cell">Total columns</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td class="mono-cell">Account type</td>
+                    <td>Savings / Current / Fixed</td>
+                  </tr>
+                  <tr>
+                    <td class="mono-cell">Region</td>
+                    <td>East / West / North / South</td>
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+
+            <h3>What the dashboard shows</h3>
+            <ul class="project-points">
+              <li>Customer segmentation by status, region, and account type.</li>
+              <li>Loan penetration and ownership patterns.</li>
+              <li>Monthly account-opening trends over time.</li>
+              <li>Balance distribution across credit score bands.</li>
+              <li>Regional financial performance comparison.</li>
+            </ul>
+
+            <div class="project_dashboard">
+              <img src="assets/dashboards/finsight_banking/finsight_banking.png" alt="Dashboard">
+            </div>
+          </div>
+        </article>
+
+        <!--PROJECT 5 --->
+
+        <article class="project-card reveal">
+          <div class="project-spine"></div>
+          <div class="project-body">
+            <div class="project-top">
+              <h2 class="project-title">Mobile Money Transaction Fraud Analysis (PaySim Dataset)</h2>
+              <a href="https://github.com/bithiNath/MobileMoney_Fraud_Analysis" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
+            </div>
+            <div class="project-stack">
+              <span class="stack-pill">Python</span>
+              <span class="stack-pill">Pandas</span>
+              <span class="stack-pill">SciPy</span>
+              <span class="stack-pill">Statsmodels</span>
+              <span class="stack-pill">Matplotlib</span>
+              <span class="stack-pill">Seaborn</span>
+            </div>
+            <p class="project-desc">
+              A statistical deep-dive into 10.48M mobile money transactions from the PaySim dataset, using descriptive statistics, outlier detection, hypothesis testing, and logistic regression to identify what separates fraudulent activity from legitimate transactions.
+
+              The goal is to move past a simple classifier and surface the statistical signals — transaction size, type, and balance behavior — that actually distinguish fraud, and translate them into a monitoring recommendation.
+            </p>
+
+            <h3>Tools & purpose</h3>
+            <ul class="project-points">
+              <li>Analyzed 1,048,576 transactions from the <strong>PaySim</strong> synthetic financial dataset (Kaggle).</li>
+              <li>Applied descriptive statistics and <strong>IQR outlier detection</strong> to characterize transaction behavior.</li>
+              <li>Ran <strong>t-tests</strong> and <strong>ANOVA</strong> to test whether fraud transactions differ meaningfully in size and type.</li>
+              <li>Built a <strong>logistic regression</strong> model to identify the strongest predictors of fraud.</li>
+            </ul>
+
+            <h3 class=>What's inside</h3>
+            <div class="case-table-wrap">
+              <table class="case-table">
+
+                <thead>
+                  <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="mono-cell">Source</td>
+                    <td>PaySim — Synthetic Financial Datasets For Fraud Detection (Kaggle)</td>
+                  </tr>
+
+                  <tr>
+                    <td class="mono-cell">Total rows</td>
+                    <td>1,048,576 transactions</td>
+                  </tr>
+
+                  <tr>
+                    <td class="mono-cell">Columns</td>
+                    <td>type, amount, oldbalanceOrg, newbalanceOrig, oldbalanceDest, newbalanceDest, isFraud</td>
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+
+            <h3>Business questions & methods</h3>
+            <div class="case-table-wrap">
+              <table class="case-table">
+
+                <thead>
+                  <tr>
+                    <th>Question</th>
+                    <th>Method</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>What does typical transaction behavior look like?</td>
+                    <td class="mono-cell">Descriptive Statistics</td>
+                  </tr>
+
+                  <tr>
+                    <td>Which transactions are abnormal?</td>
+                    <td class="mono-cell">IQR Outlier Detection</td>
+                  </tr>
+
+                  <tr>
+                    <td>Do fraud transactions really differ in size?</td>
+                    <td class="mono-cell">T-test</td>
+                  </tr>
+
+                  <tr>
+                    <td>Does amount vary by transaction type?</td>
+                    <td class="mono-cell">ANOVA</td>
+                  </tr>
+
+                  <tr>
+                    <td>What predicts fraud?</td>
+                    <td class="mono-cell">Correlation + Logistic Regression</td>
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+
+            <div class="project_dashboard">
+              <img src="assets/dashboards/Mobile_Money_ Fraud/bargraph.png" alt="Bar Graph">
+              <img src="assets/dashboards/Mobile_Money_ Fraud/histogram.png" alt="Histogram">
+              <img src="assets/dashboards/Mobile_Money_ Fraud/boxplot.png" alt="Boxplot">
+              <img src="assets/dashboards/Mobile_Money_ Fraud/heatmap.png" alt="Heatmap">
+              <img src="assets/dashboards/Mobile_Money_ Fraud/boxplot_anova.png" alt="Boxplot_annova">
+            </div>
+          </div>
+        </article>
+
+
+
           <article class="project-card reveal">
             <div class="project-spine"></div>
               <div class="project-body">
@@ -371,9 +485,9 @@
                  </div>
 
                    <div class="project-stack">
-      <span class="stack-pill">HTML5</span>
-      <span class="stack-pill">CSS3</span>
-      <span class="stack-pill">JavaScript</span>
+                    <span class="stack-pill">HTML5</span>
+                    <span class="stack-pill">CSS3</span>
+                    <span class="stack-pill">JavaScript</span>
                   </div>
 
                   <p class="project-desc"> A collection of 5 frontend projects built to demonstrate responsive UI development, modern CSS layouts, and JavaScript-based interactivity. </p>
